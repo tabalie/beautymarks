@@ -31,3 +31,6 @@ gem 'bootstrap-sass'
 
 # Devise - User Authentication (added 012416)
 gem 'devise'
+
+# Figaro - For securely configuring Rails applications (added 012416)
+gem 'figaro', '1.0'
