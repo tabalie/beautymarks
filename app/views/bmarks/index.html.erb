@@ -1,0 +1,10 @@
+<h1>All beautymarks</h1>
+<% @bmarks.each do |bmark| %>
+  <div class="media">
+     <div class="media-body">
+       <h4 class="media-heading">
+         <%= link_to bmark.title, bmark %>
+       </h4>
+     </div>
+   </div>
+<% end %>

@@ -10,9 +10,9 @@ require 'faker'
 # end
 # topics = Topic.all
 
-# Create Beautymarks
+# Create Bmarks
 50.times do
- bmark.create!(
+ Bmark.create!(
    title:  Faker::Lorem.sentence,
    body:   Faker::Lorem.paragraph,
  )
@@ -22,7 +22,7 @@ bmarks = Bmark.all
 # Create Comments
 100.times do
  Comment.create!(
-   bmark: beautymarks.sample,
+   bmark: bmarks.sample,
    body: Faker::Lorem.paragraph
  )
 end
