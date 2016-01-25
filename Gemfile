@@ -34,3 +34,6 @@ gem 'devise'
 
 # Figaro - For securely configuring Rails applications (added 012416)
 gem 'figaro', '1.0'
+
+# Faker - For generating seed data (added 012416)
+gem 'faker'
