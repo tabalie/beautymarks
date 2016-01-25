@@ -1,3 +1,3 @@
 class Comment < ActiveRecord::Base
-  belongs_to :beautymark
+  belongs_to :bmark
 end

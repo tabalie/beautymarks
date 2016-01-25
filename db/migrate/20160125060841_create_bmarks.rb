@@ -1,6 +1,6 @@
-class CreateBeautymarks < ActiveRecord::Migration
+class CreateBmarks < ActiveRecord::Migration
   def change
-    create_table :beautymarks do |t|
+    create_table :bmarks do |t|
       t.string :title
       t.text :body
 
