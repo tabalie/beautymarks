@@ -28,3 +28,6 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 # Bootstrap - CSS framework (added 012416)
 gem 'bootstrap-sass'
+
+# Devise - User Authentication (added 012416)
+gem 'devise'
