@@ -39,6 +39,13 @@ end
 end
 users = User.all
 
+user = User.first
+user.skip_reconfirmation!
+user.update_attributes!(
+  email: 'tabalie@gmail.com',
+  password: 'helloworld'
+)
+
 puts "Seed finished"
 puts "#{Bmark.count} beautymarks created"
 # puts "#{Topic.count} topics created"

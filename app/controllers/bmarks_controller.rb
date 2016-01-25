@@ -4,6 +4,7 @@ class BmarksController < ApplicationController
   end
 
   def show
+    @bmark = Bmark.all
     @bmark = Bmark.find(params[:id])
   end
 
@@ -13,6 +14,7 @@ class BmarksController < ApplicationController
 
   def create
     @bmark = Bmark.new(params.require(:bmark).permit(:title, :body))
+    @bmark.user = current_user
     if @bmark.save
       flash[:notice] = "beautymark was saved."
       redirect_to @bmark
